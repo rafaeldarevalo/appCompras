@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container">
+    <h1>Listado de Proveedores</h1> <a class="btn btn-primary float-md-right" routerLink="/addprovee">Añadir nuevo proveedor</a> <br> <br>
+    <table  class="table table-striped table-dark">
+        <thead>
+        <th>Nombre Empresa</th>
+        <th>Nombre Contacto</th>
+        <th>E-mail</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let proveedor of proveedores">
+            <td>{{proveedor.nombre}}</td>
+            <td>{{proveedor.contacto}}</td>
+            <td>{{proveedor.email}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
