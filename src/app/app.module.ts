@@ -11,6 +11,7 @@ import {HeaderComponent} from './header/header.component';
 import {AddproveeComponent} from './proveedores/addprovee/addprovee.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AddpresComponent} from './presupuestos/addpres/addpres.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
     {
@@ -49,7 +50,8 @@ const routes: Routes = [
         AppRoutingModule,
         RouterModule.forRoot(routes),
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpClientModule
     ],
     providers: [
         ProveedoresService
